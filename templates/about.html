@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f3f707af;
+        }
+        .header{
+            text-align: center;
+            padding:10px;
+        }
+        .main{
+            text-align: center;
+        }
+
+        .developers {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .developer {
+            width: 230px;
+            text-align: center;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .developer img {
+            max-width: 40%;
+            border-radius: 50%;
+        }
+
+        .btn-container {
+            margin-top: 20px;
+           text-align: center;
+        }
+
+        .btn-container a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background: linear-gradient(to bottom, #50a7d6, #e7971f);
+            color: #fff;
+            transition: background 0.3s;
+        }
+
+        .btn-container a.gmail {
+            background: linear-gradient(to bottom, #e0230a, #c46f66);
+        }
+
+        .btn-container a:hover {
+            background: linear-gradient(to bottom, #005885, #a3bccf);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>About ME </h1>
+    </div>
+    <div class="main">
+        <h2>Details</h2>
+    </div>
+    <div class="developers">
+        <div class="developer">
+            <img src="{{ url_for('static', filename='developer-female.jpeg')}}" alt="Neeraja">
+            <h2>Neeraja Reddy</h2>
+            <p>BTECH Student</p>
+            <div class="btn-container">
+                <a href="www.linkedin.com/in/neeraja-reddy-463aa5268/" target="_blank">LinkedIn</a>
+                <a class="gmail" href="mailto:neerajareddy842@gmail.com">Gmail</a>
+            </div>
+        </div>
+
+        
+
+
+    </div><br>
+    <div class="btn-container" >
+        <a href="/home">Home</a>
+    </div>
+    <div class="footer">
+        <h3 style="text-align: center;">Health is Wealth</h3>
+        <p style="text-align: center;">@2024</p>
+    </div>
+</body>
+</html>
